@@ -1,0 +1,94 @@
+<?php include("page/head.php");?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#f1f3f4" />
+    <title>BPM</title>
+	<link rel="shortcut icon" href="" />
+	
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+	
+	
+	
+	
+	<link type="text/css" href="style.css" rel="stylesheet" />
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+	<script src="firebase.js"></script>
+    
+	
+	
+	
+	
+</head>
+<body>
+
+<div class="loader">
+	<img src="photo/loadb.jpg">
+	<!--img src="photo/load.gif"-->
+	<!--img src="photo/loada.jpg"-->
+<strong> Loading...</strong></div>
+
+<div class="alert"><h1>Please enter searching text :)</h1></div>
+
+<div class="head">
+	<div id="slide1" class="aslide slideRightin" style="background: url(photo/slide2.jpg) no-repeat;"></div>
+	<div id="slide2" class="aslide" style="background: url(photo/slide3.jpg) no-repeat;"></div>
+	<div id="slide3" class="aslide" style="background: url(photo/slide4.jpg) no-repeat;"></div>
+	<div id="slide4" class="aslide" style="background: url(photo/slide1.jpg) no-repeat;"></div>
+	
+	<ul class="change_slide">
+		<li data="1" class="buttn activen"></li>
+		<li data="2" class="buttn"></li>
+		<li data="3" class="buttn"></li>
+		<li data="4" class="buttn"></li>
+	</ul>
+	
+	<div class="hseacrh">
+		<h1 titl>Search the adventure</h1>
+		<div class="searchOt">
+			<dl><input type="search" placeholder="Search for destination" id="stext" class="searchbox checkV"/>
+			<datalist id="country"></datalist></dl>
+			<dl colm2>
+				<dt><input type="search" placeholder="Check-In" id="check_in" class="searchbox checkV"/></dt>
+				<dt><input type="search" placeholder="Check-Out" id="check_out" class="searchbox checkV"/></dt>
+			</dl>
+			<dl><input type="search" placeholder="Number of Adults" id="number_adults" class="searchbox checkV"/></dl>
+			<dl><input type="search" placeholder="Interest_1" id="interest1" class="searchbox checkV"/></dl>
+			<dl><input type="search" placeholder="Interest_2" id="interest2" class="searchbox checkV"/></dl>
+			<dl><button bttn id="SearchCity">Search</button></dl>
+		</div>
+	</div>
+</div>
+
+
+
+<!--<div>
+	<div>
+		<button onclick="callbackAttractions()">Test</button>
+	</div>
+</div>
+-->
+
+
+	<div class="main">
+		<div id="test" class="results">
+		
+			<div class="blankn">
+				<img src="photo/blank.png">
+				<h1>There are no travels available :)</h1>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+
+
+
+</body>
+</html>
